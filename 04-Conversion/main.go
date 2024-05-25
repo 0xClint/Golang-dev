@@ -9,6 +9,7 @@ import (
 )
 
 func main() {
+	4
 	fmt.Println("wlecome to GOLang!")
 
 	reader := bufio.NewReader(os.Stdin)

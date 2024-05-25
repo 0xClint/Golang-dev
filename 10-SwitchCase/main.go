@@ -3,12 +3,15 @@ package main
 import (
 	"fmt"
 	"math/rand"
+	"time"
 )
 
 func main() {
 	fmt.Println("Switch and cases in GOlang")
 	dice := rand.Intn(8) + 1
 	fmt.Println(dice)
+	dice1 := rand.NewSource(time.Now().Unix()).Int63()
+	fmt.Println("DICE1 : ", dice1)
 	switch dice {
 	case 1:
 		fmt.Println("you got 1 move 1 step")

@@ -19,10 +19,12 @@ func main() {
 	var seriesList = [2]string{"Ozark", "Lucifer"}
 	fmt.Println("seriesList : ", seriesList)
 	fmt.Println("seriesList length : ", len(seriesList))
-	var fruitList = []string{"Apple", "Mango", "Watermelon", "Banana"}
+	// var fruitList = []string{"Apple", "Mango", "Watermelon", "Banana", "Ozark", "Lucifer"}
+	var fruitList = []string{"0", "1", "2", "3", "4", "5"}
 	fmt.Println("fruitList : ", fruitList)
-	fmt.Println("modified fruitList : ", fruitList[1:])
 	fmt.Println("modified fruitList : ", fruitList[:3])
+	fmt.Println("modified fruitList : ", fruitList[4:])
+	fmt.Println("modified fruitList : ", append(fruitList[:3], fruitList[4:]...))
 	fmt.Println("modified fruitList : ", fruitList[1:3])
 	fmt.Println("modified fruitList : ", append(fruitList, "StrawBerry"))
 
